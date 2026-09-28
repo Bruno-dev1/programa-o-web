@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+            <img src="../img/pug.png" alt="Pug" id="pug" height="200"
+                width="200" style="display: block; margin: 0 auto;">
+            <h2>
+                Nome: Doguinho da Silva <br>
+                Programador Sênior
+            </h2>
+        </header>
+        <nav>
+        </nav>
+        
+        <form>
+            <label>Nome:<input type="text" id="inNome"  required autofocus placeholder="Nome"></label><br>
+            <label>Email:<input type="text" id="inEmail"  required placeholder="Email"></label><br>
+            <label>Telefone:<input type="text" id="inFone" required minlength=11 placeholder="Telefone" ></label><br>
+            <label >Mensagem-----<br> <textarea name="Mensagem"  id="inMensagem" required></textarea></label>
+            <label>É recrutador?<input type="checkbox" name="contra" id="inContratante"></label><br>
+        
+            <input type="submit" value="Enviar Email">
+        </form>
+        <a href="../index.html">
+            <button>
+                Retorne
+            </button>
+        </a>
+    <script>
+        const form = document.querySelector("form")
+        
+
+        form.addEventListener("submit",(e)=>{
+        e.preventDefault()
+        alert("Mensagem enviada")
+        form.inNome.value=""
+        form.inEmail.value=""
+        form.inFone.value=""
+        form.inMensagem.value=""
+        
+    })
+    </script>
+</body>
+</html>
