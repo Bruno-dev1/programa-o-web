@@ -10,16 +10,24 @@
     <header>
             <img src="../img/pug.png" alt="Pug" id="pug" height="200"
                 width="200" style="display: block; margin: 0 auto;">
+            <h1 style="text-align: center;">Fale Comigo</h1>
             <h2>
-                Nome: Doguinho da Silva <br>
+                Nome: <strong>Doguinho da Silva</strong> <br>
                 Programador Sênior
             </h2>
         </header>
         <nav>
         </nav>
-        <div style="display: flex;
-        justify-content: center;
-        height: 100vh;">
+
+        <section >
+            <address>
+                📧 doguinho@dogtech.com &nbsp;|&nbsp;
+                📍 Canil Digital, São Paulo — SP
+            </address>
+            <hr style="width: 50%; margin: 8px auto;">
+        </section>
+
+        <div>
             <form>
             <label>Nome:<input type="text" id="inNome"  required autofocus placeholder="Nome"></label><br>
             <label>Email:<input type="text" id="inEmail"  required placeholder="Email"></label><br>
@@ -28,6 +36,8 @@
             <label>É recrutador?<input type="checkbox" name="contra" id="inContratante"></label><br>
         
             <input type="submit" value="Enviar Email">
+            <br>
+            <small>Todos os campos obrigatórios serão validados antes do envio.</small>
         </form>
         <a href="../index.html">
             <button>
